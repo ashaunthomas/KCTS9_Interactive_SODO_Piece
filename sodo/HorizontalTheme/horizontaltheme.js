@@ -108,3 +108,8 @@ function decrementState() {
     console.log("State Min reached!");
   }
 }
+
+$(document).ready(function() {
+    $("#back").hide();
+  }
+);
