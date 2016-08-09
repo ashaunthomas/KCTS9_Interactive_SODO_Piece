@@ -5,7 +5,9 @@
   background-color:black;
   text-align:center;
 }
-
+body {
+  background:black;
+}
 #inner-body {
   background: url("../pictures/muralpic_3.jpg") no-repeat center center fixed;
   width:100%;
@@ -68,6 +70,7 @@
 }
 
 .img-responsive {
+  display:none; /**Hides the thing**/
   position:absolute;
   width:20%;
   background:black;

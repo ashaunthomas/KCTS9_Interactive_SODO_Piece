@@ -1,69 +1,75 @@
 var state = 0; //state integer corresponds with the background image and content changes
 
 //image load order
-var image0 = "../pictures/muralpic_3.jpg";
-var image1 = "../pictures/muralpic_6.jpg";
-var image2 = "../pictures/muralpic_4.jpg";
-var image3 = "../pictures/muralpic_5.jpg";
-var image4 = "../pictures/muralpic_1.jpg";
-var image5 = "../pictures/muralpic_2.jpg";
+var image0 = "url('../pictures/muralpic_3.jpg') no-repeat center center fixed";
+var image1 = "url('../pictures/muralpic_6.jpg') no-repeat center center fixed";
+var image2 = "url('../pictures/muralpic_4.jpg') no-repeat center center fixed";
+var image3 = "url('../pictures/muralpic_5.jpg') no-repeat center center fixed";
+var image4 = "url('../pictures/muralpic_1.jpg') no-repeat center center fixed";
+var image5 = "url('../pictures/muralpic_2.jpg') no-repeat center center fixed";
 
 
 function hideBackButton() {
-  $('#back').hide();
+  $('#back').fadeOut();
 }
 
 function hideFrontButton() {
-  $('#forward').hide();
+  $('#forward').fadeOut();
 }
 
 function showBackButton() {
-  $('#back').show();
+  $('#back').fadeIn();
 }
 function showFrontButton() {
-  $('#forward').show();
+  $('#forward').fadeIn();
 }
 
 function updatePage() {
   switch(state)
   {
     case 0:
-      $("#inner-body").fadeOut("slow","linear", function() {
-          hideBackButton();
-          $("#inner-body").css("background", image0);
+      hideBackButton();
+      $("#inner-body").fadeOut("fast","linear", function() {
+          $("#inner-body").css("background",image0);
+          $("#inner-body").css("background-size","cover");
           $("#inner-body").fadeIn();
       });
       break;
     case 1:
-      $("#inner-body").fadeOut("slow","linear", function() {
-          showBackButton();
-          $("#inner-body").css("background", image1);
+      showBackButton();
+      $("#inner-body").fadeOut("fast","linear", function() {
+          $("#inner-body").css("background",image1);
+          $("#inner-body").css("background-size","cover");
           $("#inner-body").fadeIn();
       });
       break;
     case 2:
-      $("#inner-body").fadeOut("slow","linear", function() {
-          $("#inner-body").css("background", image2);
+      $("#inner-body").fadeOut("fast","linear", function() {
+          $("#inner-body").css("background",image2);
+          $("#inner-body").css("background-size","cover");
           $("#inner-body").fadeIn();
       });
       break;
     case 3:
-      $("#inner-body").fadeOut("slow","linear", function() {
-          $("#inner-body").css("background", image3);
+      $("#inner-body").fadeOut("fast","linear", function() {
+          $("#inner-body").css("background",image3);
+          $("#inner-body").css("background-size","cover");
           $("#inner-body").fadeIn();
       });
       break;
     case 4:
-      $("#inner-body").fadeOut("slow","linear", function() {
-          showFrontButton();
-          $("#inner-body").css("background", image4);
+      showFrontButton();
+      $("#inner-body").fadeOut("fast","linear", function() {
+          $("#inner-body").css("background",image4);
+          $("#inner-body").css("background-size","cover");
           $("#inner-body").fadeIn();
       });
       break;
     case 5:
-      $("#inner-body").fadeOut("slow","linear", function() {
-          hideFrontButton();
-          $("#inner-body").css("background", image5);
+      hideFrontButton();
+      $("#inner-body").fadeOut("fast","linear", function() {
+          $("#inner-body").css("background",image5);
+          $("#inner-body").css("background-size","cover");
           $("#inner-body").fadeIn();
       });
       break;
@@ -77,6 +83,7 @@ function incrementState() {
   if(state < 6)
   {
     state++;
+    console.log(state);
     updatePage();
     $(".progress-bar").attr('aria-valuenow', (state * 16.67) + 16.67);
     $(".progress-bar").css('width', (state * 16.67) + 16.67 + '%');
@@ -91,6 +98,7 @@ function decrementState() {
   if(state > 0)
   {
     state--;
+    console.log(state);
     updatePage();
     $(".progress-bar").attr('aria-valuenow', (state * 16.67) + 16.67);
     $(".progress-bar").css('width', (state * 16.67) + 16.67 + '%');
