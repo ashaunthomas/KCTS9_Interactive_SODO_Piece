@@ -6,8 +6,10 @@
   text-align:center;
 }
 
-body {
+#inner-body {
   background: url("../pictures/muralpic_3.jpg") no-repeat center center fixed;
+  width:100%;
+  height:100vh;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
