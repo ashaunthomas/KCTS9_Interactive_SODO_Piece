@@ -23,9 +23,12 @@ html {
   top:50%;
   transform:translateY(-50%);
   text-align:center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #bodytitle h2 {
+  margin: auto;
   font-size:32px;
   font-family:"Lucida Console", Monaco, monospace;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
@@ -46,8 +49,10 @@ html {
 
 #back {
   float:left;
+  margin-left: 5%;
 }
 
 #forward {
   float: right;
+  margin-right: 5%;
 }
