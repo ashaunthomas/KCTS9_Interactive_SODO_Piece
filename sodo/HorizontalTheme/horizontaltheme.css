@@ -33,14 +33,21 @@ html {
   -webkit-text-stroke-color: black;
 }
 
-.navButton {
+.btn {
   width:100px;
   height:100px;
   background:teal;
   border-radius:100%;
 }
 
-.navButton:hover {
+.btn:hover {
   background-color:#00CDCD;
-  cursor:pointer;
+}
+
+#back {
+  float:left;
+}
+
+#forward {
+  float: right;
 }
