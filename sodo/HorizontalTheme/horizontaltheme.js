@@ -78,6 +78,8 @@ function incrementState() {
   {
     state++;
     updatePage();
+    $(".progress-bar").attr('aria-valuenow', (state * 16.67) + 16.67);
+    $(".progress-bar").css('width', (state * 16.67) + 16.67 + '%');
   }
   else
   {
@@ -90,6 +92,8 @@ function decrementState() {
   {
     state--;
     updatePage();
+    $(".progress-bar").attr('aria-valuenow', (state * 16.67) + 16.67);
+    $(".progress-bar").css('width', (state * 16.67) + 16.67 + '%');
   }
   else
   {
