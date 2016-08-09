@@ -10,10 +10,12 @@
   background: url("../pictures/muralpic_3.jpg") no-repeat center center fixed;
   width:100%;
   height:100vh;
+  position:absolute;
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
   background-size:cover;
+  z-index:-1;
 }
 
 #bodytitle {
