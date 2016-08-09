@@ -8,6 +8,10 @@ var image3 = "url('../pictures/muralpic_5.jpg') no-repeat center center fixed";
 var image4 = "url('../pictures/muralpic_1.jpg') no-repeat center center fixed";
 var image5 = "url('../pictures/muralpic_2.jpg') no-repeat center center fixed";
 
+window.onload = function() {
+  $(".progress-bar").attr('aria-valuenow', 16.67);
+  $(".progress-bar").css('width', 16.67 + '%');
+}
 
 function hideBackButton() {
   $('#back').fadeOut();
