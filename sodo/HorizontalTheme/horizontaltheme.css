@@ -87,3 +87,9 @@
   line-height:70%;
   color:black;
 }
+#myProgressbar {
+  width: 70%;
+  position: absolute;
+  left:15%;
+  bottom: 1%;
+}
