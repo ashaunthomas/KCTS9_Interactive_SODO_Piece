@@ -1,5 +1,5 @@
 var state = 0; //state integer corresponds with the background image and content changes
-
+var slidePercentage = 100/num
 //image load order
 var image0 = "url('../pictures/muralpic_3.jpg') no-repeat center center fixed";
 var image1 = "url('../pictures/muralpic_6.jpg') no-repeat center center fixed";
