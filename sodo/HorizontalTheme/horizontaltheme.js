@@ -1,4 +1,4 @@
-var state = 0; //state integer corresponds with the background image and content changes
+/*var state = 0; //state integer corresponds with the background image and content changes
 
 //image load order
 var image0 = "url('../pictures/muralpic_3.jpg') no-repeat center center fixed";
@@ -112,8 +112,9 @@ function decrementState() {
     console.log("State Min reached!");
   }
 }
-
+*/
 $(document).ready(function() {
-    $("#back").hide();
+    //$("#back").hide();
+    #('fullpage').fullpage();
   }
 );
