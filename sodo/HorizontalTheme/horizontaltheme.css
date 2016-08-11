@@ -69,22 +69,22 @@ body {
   margin-right: 5%;
 }
 
-.img-responsive {
-  display:none; /**Hides the thing**/
-  position:absolute;
-  width:20%;
+.content {
+  /**Hides the thing**/
+  position: fixed;
+  top: 20%;
+  left: 60%;
+  width:400px;
   background:black;
   color:white;
-  font-family:helvetica;
-  font-size:22px;
-  top:70%;
-  left:60%;
+  font-family:'Open Sans', Helvetica, sans-serif;
+  font-size:18px;
   border-radius:10px;
   -webkit-box-shadow: 1px -2px 39px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px -2px 39px 0px rgba(0,0,0,0.75);
   box-shadow: 1px -2px 39px 0px rgba(0,0,0,0.75);
   text-align:center;
-  border:1px solid white;
+  padding: 5px;
 }
 
 #header {
@@ -102,5 +102,4 @@ body {
 .progress-bar{
   background-image: none;
   background-color: grey;
-
 }

@@ -37,6 +37,7 @@ function updatePage() {
           $("#inner-body").css("background",image0);
           $("#inner-body").css("background-size","cover");
           $("#inner-body").fadeIn();
+          $(".content").html("Ola Volo (BFA, Emily Carr University) is a Canadian illustrator from Kazakhstan with a distinctive style drawn from history, multiculturalism and folklore. Her work also lends itself often to the public realm with several of her murals helping to shape and beautify outdoor spaces in Vancouver.");
       });
       break;
     case 1:
@@ -45,6 +46,8 @@ function updatePage() {
           $("#inner-body").css("background",image1);
           $("#inner-body").css("background-size","cover");
           $("#inner-body").fadeIn();
+          $(".content").html("Joram Roukes is a Netherlands based artist, living and working in the city of Groningen. Blending graffiti roots with classically trained dexterity; Joram achieves a unique and inspired visual style with which he can communicate his many observations of the western world (optional link to his page)");
+
       });
       break;
     case 2:
@@ -115,5 +118,6 @@ function decrementState() {
 
 $(document).ready(function() {
     $("#back").hide();
+    $(".content").html("Ola Volo (BFA, Emily Carr University) is a Canadian illustrator from Kazakhstan with a distinctive style drawn from history, multiculturalism and folklore. Her work also lends itself often to the public realm with several of her murals helping to shape and beautify outdoor spaces in Vancouver.");
   }
 );
