@@ -114,7 +114,7 @@ function decrementState() {
 }
 */
 $(document).ready(function() {
-    $('#fullpage').fullpage({
-        anchors:['page1']
-    });
-});
+    //$("#back").hide();
+    #('fullpage').fullpage();
+  }
+);
