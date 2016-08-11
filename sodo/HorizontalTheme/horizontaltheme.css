@@ -8,7 +8,12 @@
 body {
   background:black;
 }
-#inner-body {
+
+/*******************SLIDES*****************/
+#slide0 {
+
+}
+#slide1 {
   background: url("../pictures/muralpic_3.jpg") no-repeat center center fixed;
   width:100%;
   height:100vh;
@@ -19,6 +24,11 @@ body {
   background-size:cover;
   z-index:-1;
 }
+
+#side2 {
+
+}
+/******************END SLIDES***************/
 
 #bodytitle {
   width:100%;
@@ -55,7 +65,7 @@ body {
 }
 
 .btn:hover {
-  opacity: .85;
+  opacity: 1;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -69,7 +79,7 @@ body {
   margin-right: 5%;
 }
 
-.img-responsive {
+.content-box {
   display:none; /**Hides the thing**/
   position:absolute;
   width:20%;
@@ -87,20 +97,15 @@ body {
   border:1px solid white;
 }
 
-#header {
-  font-size:70px;
-  line-height:70%;
-  color:black;
-}
 #myProgressbar {
-  width: 100%;
+  width: 70%;
+  position: absolute;
+  left:15%;
+  bottom: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 0px;
-  height: 10px;
 }
 
 .progress-bar{
   background-image: none;
   background-color: grey;
-
 }
