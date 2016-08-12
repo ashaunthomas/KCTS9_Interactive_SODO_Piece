@@ -54,3 +54,42 @@
   background-color:black;
   text-align:center;
 }
+.btn {
+  width:100px;
+  height:100px;
+  border-radius:100%;
+  border: 5px solid black;
+  font-size: 60px;
+  opacity: 0.6;
+  color: black;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.glyphicon {
+<<<<<<< Updated upstream
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: .85;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#bodytitle {
+  z-index: 999;
+  width:100%;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+#back {
+  float:left;
+  margin-left: 5%;
+}
+
+#forward {
+  float: right;
+  margin-right: 5%;
+}
