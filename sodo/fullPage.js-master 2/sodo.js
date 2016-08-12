@@ -125,8 +125,7 @@ $(document).ready(function() {
       var leavingSlide = $(this);
       console.log(slideIndex);
       if(direction =='right'){
-        var progress = $(".progress-bar");
-        progress.css('width',(parseFloat(progress.css('width'))+16.67) + '%');
+        $(".progress-bar").css('width', (slideIndex * 16.67) + 16.67 + '%');
       }
       if(slideIndex==0 && direction == 'right') {
         showBackButton();
