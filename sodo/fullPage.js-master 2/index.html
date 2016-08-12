@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -8,30 +9,18 @@
   <script src="vendors/jquery.easings.min.js"></script>
 
   <script type="text/javascript" src="jquery.fullPage.js"></script>
+  <link rel="stylesheet" type="text/css" href="sodo.css" />
 
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('#fullpage').fullpage({
-        sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
-        css3: true
-      });
-    });
-  </script>
-  <style type="text/css">
-    .section {
-      font-size: 6em;
-      text-align: center;
-    }
-  </style>
+  <script src="sodo.js"></script>
 </head>
 <body>
   <div id="fullpage">
     <div class="section">Some section</div>
     <div class="section">
-      <div class="slide"> Slide 1 </div>
-      <div class="slide"> Slide 2 </div>
-      <div class="slide"> Slide 3 </div>
-      <div class="slide"> Slide 4 </div>
+      <div class="slide" id="slide1"> Slide 1 </div>
+      <div class="slide" id="slide2"> Slide 2 </div>
+      <div class="slide" id="slide3"> Slide 3 </div>
+      <div class="slide" id="slide4"> Slide 4 </div>
     </div>
     <div class="section">Some section</div>
     <div class="section">Some section</div>

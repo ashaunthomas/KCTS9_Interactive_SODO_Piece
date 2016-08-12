@@ -1,0 +1,26 @@
+.section {
+  font-size: 6em;
+  text-align: center;
+}
+
+#slide1 {
+  background-image: url('../pictures/muralpic_3.jpg');
+}
+
+#slide2 {
+  background-image: url('../pictures/muralpic_6.jpg');
+}
+
+#slide3 {
+  background-image: url('../pictures/muralpic_4.jpg');
+}
+
+#slide4 {
+  background-image: url('../pictures/muralpic_5.jpg');
+}
+
+.slide {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
