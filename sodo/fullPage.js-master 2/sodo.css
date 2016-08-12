@@ -9,7 +9,7 @@
 }
 
 .video {
-  background-color:black;
+  background-color:white;
 }
 
 #intro {
@@ -103,6 +103,7 @@
 #forward {
   float: right;
   margin-right: 5%;
+}
 
 #tagline {
   position:absolute;
@@ -111,4 +112,8 @@
   top:80%;
   font-size:65px;
   line-height:90%;
+}
+
+#bgvideo {
+  background-color:black;
 }
