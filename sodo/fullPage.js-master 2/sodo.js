@@ -114,7 +114,8 @@ $(document).ready(function() {
     $(".content").html("Ola Volo (BFA, Emily Carr University) is a Canadian illustrator from Kazakhstan with a distinctive style drawn from history, multiculturalism and folklore. Her work also lends itself often to the public realm with several of her murals helping to shape and beautify outdoor spaces in Vancouver.");
   }
 );*/
-
+var browserWidth = $(window).width();
+var browserHeight = $(window).height();
 $(document).ready(function() {
   $('#back').hide();
 

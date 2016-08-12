@@ -2,11 +2,22 @@
   font-family:'Open Sans', Helvetica, sans-serif;
 }
 
+
 .section {
   font-size: 6em;
   text-align: center;
 }
 
+.video {
+  background-color:black;
+}
+
+#intro {
+  background-image: url('../pictures/introimage.jpg');
+  color:white;
+  line-height:100%;
+  text-shadow: 4px 4px 2px black;
+}
 #slide1 {
   background-image: url('../pictures/muralpic_3.jpg');
 }
@@ -92,4 +103,12 @@
 #forward {
   float: right;
   margin-right: 5%;
+
+#tagline {
+  position:absolute;
+  left:16.67%;
+  transform:translateX(-100%);
+  top:80%;
+  font-size:65px;
+  line-height:90%;
 }
