@@ -2,6 +2,7 @@ var browserWidth = $(window).width();
 var browserHeight = $(window).height();
 $(document).ready(function() {
   $('#back').hide();
+  $('motion').addClass('animated slideInLeft');
 
   $('#fullpage').fullpage({
 
@@ -11,6 +12,9 @@ $(document).ready(function() {
       $(".progress-bar").css('width', nextSlideIndex * 16.67 + '%');
       if(slideIndex==0 && direction == 'right') {
         showBackButton();
+        $('#forward').removeClass('start');
+        $('#forward').addClass('faf');
+        $('.text-center').html('NEXT<span class="glyphicon glyphicon-chevron-right" style="vertical-align: middle display: table-cell"></span>');
       }
       if(slideIndex==4 && direction=='right'){
         hideFrontButton();
@@ -20,6 +24,9 @@ $(document).ready(function() {
       }
       if(slideIndex==1 && direction=='left'){
         hideBackButton();
+        $('#forward').removeClass('faf');
+        $('#forward').addClass('start');
+        $('.text-center').html('START<span class="glyphicon glyphicon-chevron-right" style="vertical-align: middle display: table-cell"></span>');
       }
 
     },
