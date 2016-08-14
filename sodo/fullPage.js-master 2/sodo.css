@@ -63,7 +63,7 @@
 
 .progress-bar{
   background-image: none;
-  background-color: grey;
+  background-color: rgb(224, 16, 98);
 }
 
 #nav {
@@ -78,6 +78,7 @@
 }
 
 .btn {
+  transition:         color .25s;
   height:60px;
   font-size: 30px;
   border-radius: 0px;
@@ -131,14 +132,16 @@
   border: 1px solid white;
 }
 
+.start:hover {
+  background-color: white;
+  color: #2F4F4F
+}
+
 .glyphicon {
   position: relative;
   top: 3px;
 }
 
-.brest {
-  color: black;
-}
 .faf {
   border-left: 1px solid #2F4F4F;
 }
