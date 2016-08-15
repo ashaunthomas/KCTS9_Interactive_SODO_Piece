@@ -9,14 +9,14 @@ $(document).ready(function() {
     onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
       var leavingSlide = $(this);
       console.log(slideIndex);
-      $(".progress-bar").css('width', nextSlideIndex * 16.67 + '%');
+      $(".progress-bar").css('width', nextSlideIndex * 14.2857142857 + '%');
       if(slideIndex==0 && direction == 'right') {
         showBackButton();
         $('#forward').removeClass('start');
         $('#forward').addClass('faf');
         $('.text-center').html('NEXT<span class="glyphicon glyphicon-chevron-right" style="vertical-align: middle display: table-cell"></span>');
       }
-      if(slideIndex==4 && direction=='right'){
+      if(slideIndex==6 && direction=='right'){
         hideFrontButton();
       }
       if(slideIndex==5 && direction=='left'){
@@ -37,9 +37,6 @@ $(document).ready(function() {
     controlArrows: false,
   });
 
-  $('#fullpage').fullpage({
-
-  })
 
   $('#video video').on('loadedmetadata', function() {
 

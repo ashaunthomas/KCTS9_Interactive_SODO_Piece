@@ -30,11 +30,11 @@
 }
 
 #slide1 {
-  background-image: url('../pictures/muralpic_3.jpg');
+  background-image: url('../pictures/muralpic_6.jpg');
 }
 
 #slide2 {
-  background-image: url('../pictures/muralpic_6.jpg');
+  background-image: url('../pictures/muralpic_3.jpg');
 }
 
 #slide3 {
@@ -45,6 +45,9 @@
   background-image: url('../pictures/muralpic_5.jpg');
 }
 
+#blurb1 {
+  background-image: url('../pictures/muralpic_2.jpg');
+}
 .slide {
   background-repeat: no-repeat;
   background-position: center;
@@ -149,4 +152,68 @@
 .faf:hover, #back:hover {
   background-color: #2F4F4F;
   color: white;
+}
+
+.longtext {
+  color:white;
+  font-size:0.4em;
+  background-color:red;
+  opacity:0.75;
+  border-radius:5px;
+  padding:2%;
+  width:60%;
+  margin-left:50%;
+  transform:translateX(-50%);
+  float:top;
+}
+
+.clear {
+  opacity:2;
+}
+
+.black {
+  background-color:black;
+}
+
+.grey {
+  background-color:#d3d3d3;
+}
+
+.small {
+  font-size:0.4em;
+}
+
+.medium {
+  font-size:0.7em;
+}
+
+.shadow {
+
+}
+#mapsButton {
+  background-color:#4200b3;
+}
+
+#mapsButton:hover {
+  cursor:pointer;
+  animation-name:slowfade;
+  animation-duration:.3s;
+  animation-fill-mode:forwards;
+  border-radius:3px;
+}
+
+@keyframes slowfade {
+  to {
+    background-color:#5e00ff;
+  }
+}
+
+a {
+  text-decoration:none;
+  color:white;
+}
+
+a:hover {
+  text-decoration:none;
+  color:white;
 }
