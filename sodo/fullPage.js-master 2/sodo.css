@@ -34,25 +34,34 @@
 }
 
 #slide2 {
-  background-image: url('../pictures/muralpic_3.jpg');
+  background-color:	#10f4a2;
 }
 
 #slide3 {
-  background-image: url('../pictures/muralpic_4.jpg');
-}
-
-#slide4 {
   background-image: url('../pictures/muralpic_5.jpg');
 }
 
+#slide4 {
+  background-color: #7D24F4;
+}
+#slide5 {
+  background-image: url('../pictures/train.gif');
+}
 #blurb1 {
   background-image: url('../pictures/muralpic_2.jpg');
 }
+
+#blurb2 {
+  background-color:#FCFF11;
+}
+
+
 .slide {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+
 
 #myProgressbar {
   z-index: 99;
@@ -177,6 +186,7 @@
 
 .grey {
   background-color:#d3d3d3;
+  color:black;
 }
 
 .small {
@@ -188,10 +198,13 @@
 }
 
 .shadow {
-
+  -webkit-box-shadow: 12px 12px 5px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 12px 12px 5px -9px rgba(0,0,0,0.75);
+  box-shadow: 12px 12px 5px -9px rgba(0,0,0,0.75);
 }
 #mapsButton {
   background-color:#4200b3;
+  border-radius:3px;
 }
 
 #mapsButton:hover {
@@ -209,11 +222,82 @@
 }
 
 a {
-  text-decoration:none;
-  color:white;
+  text-decoration:underline;
+  color:inherit;
 }
 
 a:hover {
-  text-decoration:none;
+  text-decoration:underline;
   color:white;
+}
+
+.spacehack {
+  color:#d3d3d3;
+}
+
+
+.bubble
+{
+position: relative;
+display:inline-block;
+font-size:0.3em;
+max-width:60%;
+min-height:1.5em;
+padding: 20px;
+background: #FFFFFF;
+border: #7F7F7F solid 4px;
+-webkit-border-radius: 20px;
+-moz-border-radius: 20px;
+border-radius: 20px;
+}
+
+.bubble:after
+{
+content: "";
+position: absolute;
+bottom: -15px;
+left: 60%;
+border-style: solid;
+border-width: 15px 15px 0;
+border-color: #FFFFFF transparent;
+display: block;
+width: 0;
+z-index: 10;
+}
+
+.bubble:before
+{
+content: "";
+position: absolute;
+bottom: -19.5px;
+left: calc(60% - 3px) ;
+border-style: solid;
+border-width: 18px 18px 0;
+border-color: #7F7F7F transparent;
+display: block;
+width: 0;
+z-index: 0;
+}
+
+.yellow {
+  background-color:#CC9900;
+}
+
+footer {
+  font-size:0.3em;
+  position:absolute;
+  top:100%;
+  transform:translateY(-100%);
+  color:white;
+  text-shadow: 2px 2px 4px black;
+}
+#devs {
+  top:95%;
+}
+#rhea {
+  top:90%;
+}
+
+.full {
+  opacity:1;
 }

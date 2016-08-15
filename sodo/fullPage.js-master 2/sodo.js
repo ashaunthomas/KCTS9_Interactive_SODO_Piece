@@ -9,17 +9,17 @@ $(document).ready(function() {
     onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
       var leavingSlide = $(this);
       console.log(slideIndex);
-      $(".progress-bar").css('width', nextSlideIndex * 14.2857142857 + '%');
+      $(".progress-bar").css('width', nextSlideIndex * 12.5 + '%');
       if(slideIndex==0 && direction == 'right') {
         showBackButton();
         $('#forward').removeClass('start');
         $('#forward').addClass('faf');
         $('.text-center').html('NEXT<span class="glyphicon glyphicon-chevron-right" style="vertical-align: middle display: table-cell"></span>');
       }
-      if(slideIndex==6 && direction=='right'){
+      if(slideIndex==7 && direction=='right'){
         hideFrontButton();
       }
-      if(slideIndex==5 && direction=='left'){
+      if(slideIndex==8 && direction=='left'){
         showFrontButton();
       }
       if(slideIndex==1 && direction=='left'){
@@ -38,7 +38,7 @@ $(document).ready(function() {
   });
 
 
-  $('#video video').on('loadedmetadata', function() {
+  $('.video video').on('loadedmetadata', function() {
 
 			var $width, $height, // Width and height of screen
 				$vidwidth = this.videoWidth, // Width of video (actual width)
@@ -94,7 +94,3 @@ function hideBackButton() {
 function hideFrontButton() {
   $('#forward').fadeOut();
 }
-
-document.getElementById("#bgvideo").addEventListener('loadedmetadata',function() {
-  this.currentTime = 10;
-}, false);
