@@ -75,7 +75,7 @@
 
 .progress-bar{
   background-image: none;
-  background-color: rgb(224, 16, 98);
+  background-color: #DF3D82;
 }
 
 #nav {
@@ -195,6 +195,7 @@
 
 .medium {
   font-size:0.7em;
+  text-align: justify;
 }
 
 .shadow {
