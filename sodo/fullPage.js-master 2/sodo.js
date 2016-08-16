@@ -98,7 +98,6 @@ $(document).ready(function() {
 
 			// Run function also on window resize.
 			$(window).resize(adjSize);
-			$(this)[0].play();
 		});
 
   $('#back').click(function() {
