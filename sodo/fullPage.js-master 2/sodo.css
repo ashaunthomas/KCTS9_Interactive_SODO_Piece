@@ -39,6 +39,9 @@
 #slide1 {
   background-image: url('../pictures/muralpic_6.jpg');
 }
+#slide2 {
+  background-color: #81D6DE;
+}
 
 #slide3 {
   background-image: url('../pictures/muralpic_5.jpg');
@@ -52,8 +55,12 @@
   background-image: url('../pictures/muralpic_2.jpg');
 }
 
-#blurb2,#slide4,#slide2 {
-  background-image: url('../pictures/pink_rice.png');
+#blurb2 {
+  background-color: #FAAFBA;
+}
+
+#slide4 {
+  background-color: #81DEB8;
 }
 
 
@@ -165,21 +172,25 @@
 }
 
 .longtext {
+  max-width: 960px;
   color:black;
   font-size:0.35em;
   background-color:white;
   border-radius:5px;
   padding:2%;
   width: 60%;
-  margin-left: 20%;
+  margin-left: auto;
+  margin-right: auto;
   /*float:top;*/
 }
 
 #s1 {
-  width: 450px;
+  display: none;
+  min-width: 450px;
+  width: 25%;
   position: relative;
   top: 30%;
-  left: -10%;
+  left: -30%;
   text-align: justify;
   background-color: rgb(245, 246, 250);
 }
