@@ -1,3 +1,10 @@
+@media only screen and (max-width: 320px) {
+
+   body { font-size: 2em; }
+
+}
+
+
 * {
   font-family:'Open Sans', Helvetica, sans-serif;
 }
@@ -33,17 +40,10 @@
   background-image: url('../pictures/muralpic_6.jpg');
 }
 
-#slide2 {
-  background-color:#FFF056;
-}
-
 #slide3 {
   background-image: url('../pictures/muralpic_5.jpg');
 }
 
-#slide4 {
-  background-color: #7D24F4;
-}
 #slide5 {
   visibility:hidden;
   background-image: url('../pictures/train.gif');
@@ -52,8 +52,8 @@
   background-image: url('../pictures/muralpic_2.jpg');
 }
 
-#blurb2 {
-  background-color:	#10f4a2;
+#blurb2,#slide4,#slide2 {
+  background-image: url('../pictures/pink_rice.png');
 }
 
 
@@ -165,16 +165,23 @@
 }
 
 .longtext {
-  color:white;
-  font-size:0.4em;
-  background-color:red;
-  opacity:0.75;
+  color:black;
+  font-size:0.35em;
+  background-color:white;
   border-radius:5px;
   padding:2%;
-  width:60%;
-  margin-left:50%;
-  transform:translateX(-50%);
-  float:top;
+  width: 60%;
+  margin-left: 20%;
+  /*float:top;*/
+}
+
+#s1 {
+  width: 450px;
+  position: relative;
+  top: 30%;
+  left: -10%;
+  text-align: justify;
+  background-color: rgb(245, 246, 250);
 }
 
 .clear {
@@ -183,10 +190,11 @@
 
 .black {
   background-color:black;
+
 }
 
 .grey {
-  background-color:#d3d3d3;
+  background-color:rgb(245, 246, 250);
   color:black;
 }
 
@@ -200,9 +208,7 @@
 }
 
 .shadow {
-  -webkit-box-shadow: 12px 12px 5px -9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 12px 12px 5px -9px rgba(0,0,0,0.75);
-  box-shadow: 12px 12px 5px -9px rgba(0,0,0,0.75);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #mapsButton {
   background-color:#4200b3;

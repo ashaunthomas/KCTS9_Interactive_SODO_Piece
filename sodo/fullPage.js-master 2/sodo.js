@@ -13,6 +13,7 @@ $(document).ready(function() {
       $(".progress-bar").css('width', nextSlideIndex * 12.5 + '%');
       if(slideIndex==0 && direction == 'right') {
         showBackButton();
+        $('#s1').fadeIn();
         $('#forward').removeClass('start');
         $('#forward').addClass('faf');
         $('.text-center').html('NEXT<span class="glyphicon glyphicon-chevron-right" style="vertical-align: middle display: table-cell"></span>');
