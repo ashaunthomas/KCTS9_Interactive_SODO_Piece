@@ -1,6 +1,12 @@
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 756px) {
 
-   body { font-size: 2em; }
+   #s1 {
+        left: 0%;
+        top: 0%;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto
+   }
 
 }
 
@@ -186,11 +192,11 @@
 
 #s1 {
   display: none;
-  min-width: 450px;
+  min-width: 400px;
   width: 25%;
   position: relative;
   top: 30%;
-  left: -30%;
+  left: 0%;
   text-align: justify;
   background-color: rgb(245, 246, 250);
 }
