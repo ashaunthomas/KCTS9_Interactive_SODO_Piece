@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex){
       var leavingSlide = $(this);
-      console.log(slideIndex);
+      console.log(nextSlideIndex);
       $(".progress-bar").css('width', nextSlideIndex * 12.5 + '%');
       if(slideIndex==0 && direction == 'right') {
         showBackButton();
@@ -31,22 +31,6 @@ $(document).ready(function() {
         $('.text-center').html('START<span class="glyphicon glyphicon-chevron-right" style="vertical-align: middle display: table-cell"></span>');
       }
 
-      switch(slideIndex)
-      {
-        case 3:
-        case 5:
-          $('#guygif').css("visibility","hidden");
-          $('#galgif').css("visibility","hidden");
-          break;
-        case 4:
-          $('#guygif').css("visibility","visible");
-          break;
-        case 6:
-          $('galgif').css("visibility","visible");
-          break;
-        default:
-          break;
-      }
     },
 
     sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
@@ -57,7 +41,6 @@ $(document).ready(function() {
 
 
   $('.video video').on('loadedmetadata', function() {
-
 			var $width, $height, // Width and height of screen
 				$vidwidth = this.videoWidth, // Width of video (actual width)
 				$vidheight = this.videoHeight, // Height of video (actual height)
