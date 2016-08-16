@@ -45,6 +45,7 @@
   background-color: #7D24F4;
 }
 #slide5 {
+  visibility:hidden;
   background-image: url('../pictures/train.gif');
 }
 #blurb1 {
@@ -298,4 +299,12 @@ footer {
 
 .full {
   opacity:1;
+}
+
+#guygif {
+  visibility:hidden;
+}
+
+#galgif {
+  visibility:hidden;
 }

@@ -1,6 +1,7 @@
 var browserWidth = $(window).width();
 var browserHeight = $(window).height();
 $(document).ready(function() {
+  document.getElementsByTagName('video')[0].volume = 0.3;
   $('#back').hide();
   $('motion').addClass('animated slideInLeft');
 
@@ -16,6 +17,7 @@ $(document).ready(function() {
         $('#forward').addClass('faf');
         $('.text-center').html('NEXT<span class="glyphicon glyphicon-chevron-right" style="vertical-align: middle display: table-cell"></span>');
       }
+
       if(slideIndex==7 && direction=='right'){
         hideFrontButton();
       }
@@ -29,6 +31,22 @@ $(document).ready(function() {
         $('.text-center').html('START<span class="glyphicon glyphicon-chevron-right" style="vertical-align: middle display: table-cell"></span>');
       }
 
+      switch(slideIndex)
+      {
+        case 3:
+        case 5:
+          $('#guygif').css("visibility","hidden");
+          $('#galgif').css("visibility","hidden");
+          break;
+        case 4:
+          $('#guygif').css("visibility","visible");
+          break;
+        case 6:
+          $('galgif').css("visibility","visible");
+          break;
+        default:
+          break;
+      }
     },
 
     sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
@@ -44,7 +62,7 @@ $(document).ready(function() {
 				$vidwidth = this.videoWidth, // Width of video (actual width)
 				$vidheight = this.videoHeight, // Height of video (actual height)
 				$aspectRatio = $vidwidth / $vidheight; // The ratio the video's height and width are in
-
+        this.currentTime = 2;
 			(adjSize = function() { // Create function called adjSize
 
 				$width = $(window).width(); // Width of the screen
@@ -64,6 +82,8 @@ $(document).ready(function() {
 					// Else just set the video to the width of the screen/container
 					$vid = $('#section0 video').css({'width' : $width+'px'});
 				}
+
+
 
 			})(); // Run function immediately
 
