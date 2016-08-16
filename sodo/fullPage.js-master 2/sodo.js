@@ -31,6 +31,32 @@ $(document).ready(function() {
         $('.text-center').html('START<span class="glyphicon glyphicon-chevron-right" style="vertical-align: middle display: table-cell"></span>');
       }
 
+      if(nextSlideIndex == 5)
+      {
+        $('#guygif').css("visibility","visible");
+        $('#guygif').fadeIn();
+      }
+      if(nextSlideIndex == 4 || nextSlideIndex == 6)
+      {
+        $('#guygif').fadeOut("fast", function() {
+          $('#guygif').css("visibility","visible");
+        });
+      }
+      if(nextSlideIndex == 7)
+      {
+        $('#galgif').css("visibility","visible");
+        $('#galgif').fadeIn();
+      }
+      if(nextSlideIndex == 6 || nextSlideIndex == 8)
+      {
+        $('#galgif').fadeOut("fast", function() {
+          $('#galgif').css("visibility","visible");
+        });
+      }
+      if(nextSlideIndex == 8)
+      {
+        $('#slide5').css("visibility","visible");
+      }
     },
 
     sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE'],
@@ -72,7 +98,7 @@ $(document).ready(function() {
 
 			// Run function also on window resize.
 			$(window).resize(adjSize);
-			$('#video')[0].play();
+			$(this)[0].play();
 		});
 
   $('#back').click(function() {
