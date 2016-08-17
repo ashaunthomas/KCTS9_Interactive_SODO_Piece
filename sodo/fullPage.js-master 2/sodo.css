@@ -1,16 +1,3 @@
-@media only screen and (max-width: 756px) {
-
-   #s1 {
-        left: 0%;
-        top: 0%;
-        width: 30%;
-        margin-left: auto;
-        margin-right: auto
-   }
-
-}
-
-
 * {
   font-family:'Open Sans', Helvetica, sans-serif;
 }
@@ -190,17 +177,6 @@
   /*float:top;*/
 }
 
-#s1 {
-  display: none;
-  min-width: 400px;
-  width: 25%;
-  position: relative;
-  top: 30%;
-  left: 0%;
-  text-align: justify;
-  background-color: rgb(245, 246, 250);
-}
-
 .clear {
   opacity:2;
 }
@@ -248,10 +224,13 @@
 
 a {
   color:inherit;
+  text-decoration: none;
+
 }
 
 a:hover {
   color:white;
+  text-decoration: none;
 }
 
 .spacehack {
@@ -261,10 +240,10 @@ a:hover {
 
 .bubble
 {
+max-width: 960px;
 position: relative;
 display:inline-block;
 font-size:0.3em;
-max-width:60%;
 min-height:1.5em;
 padding: 20px;
 background: #FFFFFF;

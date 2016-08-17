@@ -33,6 +33,13 @@ $(document).ready(function() {
       if(slideIndex==2){
           $('#s1').fadeOut();
       }
+      if(slideIndex==3){
+          $('#s2').fadeOut();
+      }
+      if(slideIndex==6){
+          $('#s3').fadeOut();
+      }
+
       if(nextSlideIndex == 5)
       {
         $('#guygif').css("visibility","visible");
@@ -63,6 +70,12 @@ $(document).ready(function() {
     afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
       if(slideIndex==2) {
           $("#s1").fadeIn();
+      }
+      if(slideIndex==3) {
+          $("#s2").fadeIn();
+      }
+      if(slideIndex==6) {
+          $("#s3").fadeIn();
       }
     },
 
